@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start of my personal blog
+title: Personal blog
 ---
 
-Hello, this is my personal blog! I will be posting things about data science and web development. Keep in touch with me by following me on [Linkedin](https://www.linkedin.com/in/mrhajbabaei/)
+Hello, this is my personal blog! I usually post interesting things about data science. Follow me on [Linkedin](https://www.linkedin.com/in/mrhajbabaei/)
