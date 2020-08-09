@@ -9,6 +9,11 @@ In this tutorial I used [an official example](https://github.com/pytorch/example
 `from torch.utils.tensorboard import SummaryWriter`
 , and in your main function, or wherever you want to use that create an instance of it:
 `writer = SummaryWriter('your_log_directory/name_of_your_summary_experiment')`
-**Note:** you should create your log dir already; consider something like this: "log_dir" as your main directory for all kinds of summarization and experiment.
+**Note:** you should create your log dir already; consider something like this: "log" as your main directory for all kinds of summarization and experiment.
+**Note:** Just make sure log dire is excluded from your git repository (because of preventing upload unwanted log files on your repository), so put this code on your `.gitignore` file:
+`
+#tensorboard
+/log
+`
 
 
