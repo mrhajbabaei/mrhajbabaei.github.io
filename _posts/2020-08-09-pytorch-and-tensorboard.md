@@ -22,7 +22,8 @@ summary_writer.add_image('mnist_images', image_grid)
 ```
 Please consider that your data batch could be every batch data of your traning data, and the result is look like this:
 
-![image grid](images/second-post/image_grid.png)
+![image_grid](https://user-images.githubusercontent.com/25500417/89778472-d65cd300-db22-11ea-8933-3b4825088f38.png)
+
 
 #### 2- Graph  
 You can have a full graph of entire your network. Just by adding this snippet you can add your graph to your summary:
@@ -31,9 +32,12 @@ summary_writer.add_graph(model, your_data_batch)
 ```
 Like above, you can use every data batch you would like, and the output would be like this:
 
-![graph](images/second-post/graph.png)
+![graph](https://user-images.githubusercontent.com/25500417/89778404-b3322380-db22-11ea-91fa-6bbcedd301cd.png)
 
-![graph](images/second-post/graph_zoom.png)
+)
+
+![graph_zoom](https://user-images.githubusercontent.com/25500417/89778454-cc3ad480-db22-11ea-9acf-a774b11e8689.png)
+
 
 #### 3- Embedding
 
@@ -46,7 +50,8 @@ summary_writer.add_embedding(z, global_step=epoch, tag='latent_layer')
 ```
 encode and reparameterize are two parts of our network, and we show the output of reparameterize part based on our input data as the value of latent layer (z). The result would be like this: 
 
-![projection](images/second-post/embedding.png)
+![embedding](https://user-images.githubusercontent.com/25500417/89778344-9564be80-db22-11ea-8fd7-f7b8a38468d9.png)
+)
 
 #### 4- Loss function
 
@@ -57,8 +62,13 @@ summary_writer.add_scalar('training loss', train_loss, epoch)
 ```
 We add epoch as the global_step which is neccessary for tensorboard to recognize the value based on the program's step. It is recommended to watch your loss function value after every epoch.
 
-![loss function](images/second-post/loss.png)
+![loss](https://user-images.githubusercontent.com/25500417/89778514-e674b280-db22-11ea-8cdb-a63c6740d992.png)
 
-#### Final note: 
+
+#### Final note
 
 There are many other types of summary which we cannot introduce here because of type of our project (unsupervised learning), and you can find them in [this address](https://pytorch.org/docs/stable/tensorboard.html).
+
+#### References
+1- [PyTorch Tensorboard tutorial](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
+2- [PyTorch VAE official example](https://github.com/pytorch/examples/tree/master/vae)
