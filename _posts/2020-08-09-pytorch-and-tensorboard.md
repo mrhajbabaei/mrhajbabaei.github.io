@@ -3,7 +3,7 @@ layout: post
 title: Using Tensorboard in PyTorch
 ---
 
-Watching closely parameters in neural networks is very important in the training process. Tensorboard recognise as a great tool for this job, but some people use think this tool is designed jsut for Tensorflow framework. However, I will show you on this post that Tensorboard can be used in PyTorch as visualization tool as well.
+Watching closely parameters in neural networks is very important during the training process. Tensorboard is a well-known tool for this job, but some people think this tool is designed jsut for Tensorflow framework. However, I will show you on this post that Tensorboard can be used in PyTorch as visualization tool as well.
 
 In this tutorial I used [an official example](https://github.com/pytorch/examples/tree/master/vae) of PyTorch about VAE network, and also final code is available [here](https://github.com/mrhajbabaei/pytorch-tensorboard) (just be aware that I changed this example to be match with our expectations). At the first step we should import **SummaryWriter**; which plays the main role in creating a summay, and I I will show you how we can use this to create different types of visualization in our program. After that, you should create an instance of **SummaryWriter**, so in top of your program in import section put this code:   
 `from torch.utils.tensorboard import SummaryWriter`    
