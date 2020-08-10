@@ -34,7 +34,7 @@ Like above, you can use every data batch you would like, and the output would be
 
 ![graph](https://user-images.githubusercontent.com/25500417/89778404-b3322380-db22-11ea-91fa-6bbcedd301cd.png)
 
-)
+You can click on eacha part to enlarge it:
 
 ![graph_zoom](https://user-images.githubusercontent.com/25500417/89778454-cc3ad480-db22-11ea-9acf-a774b11e8689.png)
 
