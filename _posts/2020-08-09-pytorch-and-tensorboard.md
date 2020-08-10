@@ -14,7 +14,7 @@ In this tutorial I used [an official example](https://github.com/pytorch/example
 **Note:** Just make sure log dire is excluded from your git repository (because of preventing upload unwanted big log files to your repository).
 
 Generally, you can add different kinds of summary for your project based on type of your project and your needs. In this project I consider these summary types:
-#### 1- Image grid   
+### Image grid   
 As I mentioned before, this project is a VAE example and input for this project is [MNIST](http://yann.lecun.com/exdb/mnist/) database which cosist of 60,000, and 10,000 images with 28x28 size for training and testing respectively. To doing so, you should make a grid by your batch data and add this image grid to your summary writer:   
 ```python
 image_grid = make_grid(your_data_batch)  
@@ -25,7 +25,7 @@ Please consider that your data batch could be each of batch data of your traning
 ![image_grid](https://user-images.githubusercontent.com/25500417/89778472-d65cd300-db22-11ea-8933-3b4825088f38.png)
 
 
-#### 2- Graph  
+### Graph  
 You can have a full graph of entire your network. Just by adding this snippet you can add your graph to your summary:
 ```python
 summary_writer.add_graph(model, your_data_batch)
@@ -39,7 +39,7 @@ You can click on each part to enlarge it:
 ![graph_zoom](https://user-images.githubusercontent.com/25500417/89778454-cc3ad480-db22-11ea-9acf-a774b11e8689.png)
 
 
-#### 3- Embedding
+### Embedding
 
 We use VAE in this project, and as you know this kind of network has a latent layer. That would be great if we could project this latent layer in a lower dimension (3 in this case). This could be possible by adding this code:
 
@@ -51,9 +51,9 @@ summary_writer.add_embedding(z, global_step=epoch, tag='latent_layer')
 encode and reparameterize are two parts of our network, and we show the output of reparameterize part based on our input data as the value of latent layer (z). The result would be like this: 
 
 ![embedding](https://user-images.githubusercontent.com/25500417/89778344-9564be80-db22-11ea-8fd7-f7b8a38468d9.png)
-)
 
-#### 4- Loss function
+
+### Loss function
 
 Loss function is kind of scalar value, and we can add this value to our summary with below snippet code, and the result is just like the following picture.
 
@@ -65,10 +65,10 @@ Note that we add epoch as the global_step which is neccessary for tensorboard to
 ![loss](https://user-images.githubusercontent.com/25500417/89778514-e674b280-db22-11ea-8cdb-a63c6740d992.png)
 
 
-#### Final note
+### Final note
 
 There are some other types of summary which we cannot introduce here because of type of our project (unsupervised learning), and you can find them in [this address](https://pytorch.org/docs/stable/tensorboard.html).
 
-#### References
+### References
 1- [PyTorch Tensorboard tutorial](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)   
 2- [PyTorch VAE official example](https://github.com/pytorch/examples/tree/master/vae)
