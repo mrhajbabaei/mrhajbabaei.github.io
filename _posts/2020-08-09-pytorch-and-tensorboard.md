@@ -22,7 +22,7 @@ summary_writer.add_image('mnist_images', image_grid)
 ```
 Please consider that your data batch could be every batch data of your traning data, and the result is look like this:
 
-![image grid](https://github.com/mrhajbabaei/mrhajbabaei.github.io/blob/master/images/second-post/image_grid.png)
+![image grid](images/second-post/image_grid.png)
 
 #### 2- Graph  
 You can have a full graph of entire your network. Just by adding this snippet you can add your graph to your summary:
@@ -31,9 +31,9 @@ summary_writer.add_graph(model, your_data_batch)
 ```
 Like above, you can use every data batch you would like, and the output would be like this:
 
-![graph](https://github.com/mrhajbabaei/mrhajbabaei.github.io/blob/master/images/second-post/graph.png)
+![graph](images/second-post/graph.png)
 
-![graph](https://github.com/mrhajbabaei/mrhajbabaei.github.io/blob/master/images/second-post/graph_zoom.png)
+![graph](images/second-post/graph_zoom.png)
 
 #### 3- Embedding
 
@@ -46,7 +46,7 @@ summary_writer.add_embedding(z, global_step=epoch, tag='latent_layer')
 ```
 encode and reparameterize are two parts of our network, and we show the output of reparameterize part based on our input data as the value of latent layer (z). The result would be like this: 
 
-![projection](https://github.com/mrhajbabaei/mrhajbabaei.github.io/blob/master/images/second-post/embedding.png)
+![projection](images/second-post/embedding.png)
 
 #### 4- Loss function
 
@@ -57,7 +57,7 @@ summary_writer.add_scalar('training loss', train_loss, epoch)
 ```
 We add epoch as the global_step which is neccessary for tensorboard to recognize the value based on the program's step. It is recommended to watch your loss function value after every epoch.
 
-![loss function](https://github.com/mrhajbabaei/mrhajbabaei.github.io/blob/master/images/second-post/loss.png)
+![loss function](images/second-post/loss.png)
 
 #### Final note: 
 
