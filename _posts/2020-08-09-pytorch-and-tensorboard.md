@@ -11,7 +11,8 @@ In this tutorial I used [an official example](https://github.com/pytorch/example
 `writer = SummaryWriter('your_log_directory/name_of_your_summary_experiment')`
 
 **Note:** you should have your log directory already; consider something like this: "log" as your main directory for all kinds of summarization and experiment.    
-**Note:** Just make sure log dire is excluded from your git repository (because of preventing upload unwanted big log files to your repository).
+**Note:** Just make sure log dire is excluded from your git repository (because of preventing upload unwanted big log files to your repository).  
+**Note:** You can run tensorboard for your program with this command: `tensorboard --logdir=log_dir_path`
 
 Generally, you can add different kinds of summary for your project based on type of your project and your needs. In this project I consider these summary types:
 ### Image grid   
