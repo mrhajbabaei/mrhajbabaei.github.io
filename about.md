@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ### More Information
 
-Highly accurate and experienced Data Scientist adept collecting, cleansing, analyzing, and interpreting large datasets. Developing new forecasting models, and performing data visualization tasks, and practical skills at deep learning and Statistics. Possessing extensive analytical skills, creative, eager to learn new things, and a significant ability to work in team environments.
+I am a data scientist with an eager passion for different aspects of data, including gathering, cleansing, and visualization. Besides, I would like to work on machine learning projects, not only supervised and unsupervised but also reinforcement learning ones. I am technically proficient at the Python programming, designing the neural network in Deep Learning frameworks, Linear Algebra, image/speech processing, and analytical skills.
 
 ### Contact me
 
