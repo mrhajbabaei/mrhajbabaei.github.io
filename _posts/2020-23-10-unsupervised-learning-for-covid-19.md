@@ -22,7 +22,7 @@ Another handy feature is scaling. In fact, you should scale your variable before
 
 
 #### PCA in Python
-In the previous section, we briefly learn what PCA is, and now we want to try PCA on real data. We use [Covid-19 dataset]([www.github.com](https://github.com/imdevskp/covid_19_jhu_data_web_scrap_and_cleaning)) in which there are various collections of Covid-19 related datasets. I consider using **_full_grouped.csv_** file through this tutorial. In this file, there are 10 columns regarding Date (last update of the database), Country/Region, Confirmed, Deaths, Recovered, Active, New cases, New deaths, New recovered, and WHO Region. 
+In the previous section, we briefly learn what PCA is, and now we want to try PCA on real data. We use [Covid-19 dataset](https://github.com/imdevskp/covid_19_jhu_data_web_scrap_and_cleaning) in which there are various collections of Covid-19 related datasets. I consider using **_full_grouped.csv_** file through this tutorial. In this file, there are 10 columns regarding Date (last update of the database), Country/Region, Confirmed, Deaths, Recovered, Active, New cases, New deaths, New recovered, and WHO Region. 
 ![Pic-01](https://user-images.githubusercontent.com/25500417/97104419-fedb7e80-16c8-11eb-9cde-c84e146b55fc.jpg)
 First, we want to apply PCA for continents. To do so, we need to remove unnecessary columns such as **Date** and **Country/Region**, and by putting this code, we can do that:
 ```python
@@ -35,9 +35,10 @@ df = df.groupby(['WHO Region']).sum().reset_index()
 The result would be like this:
 ![Pic-02](https://user-images.githubusercontent.com/25500417/97104574-2f6fe800-16ca-11eb-829d-0b5175a19994.jpg)
 
-Now, if we apply PCA on this data, the output would be like the below image:
+Now, if we apply PCA on this data, the output would be like the below image (the result of applying the PCA on our dataset at the top, and loading vectors of the PCA algorithm at the bottom):
 ![Pic-03](https://user-images.githubusercontent.com/25500417/97144628-0870ef00-177a-11eb-9017-99b781746022.jpg)
 
+You can find the Python code of this post at [this github address](https://github.com/mrhajbabaei/unsupervised-learning-covid-19).
 
 
 #### Insights
