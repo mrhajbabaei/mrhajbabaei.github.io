@@ -4,7 +4,7 @@ title: PCA and how we can use it for Covid-19
 ---
 
 #### Introduction
-After reading the Unsupervised Learning chapter in [An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/) book (Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani), I decided to write a concise article about that by using apply it on a Covid-19 dataset.
+After reading the Unsupervised Learning chapter in [An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/) book (Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani), I decided to write a concise article about the PCA and how to apply it on a Covid-19 dataset.
  
 #### PCA in a nutshell
 Unsupervised Learning has been becoming popular among the scientist in various aspects including medical scientist to predict cancer or ads companies to analyze the effect of their work on people.
@@ -37,8 +37,7 @@ The result would be like this:
 ![Pic-02](https://user-images.githubusercontent.com/25500417/97176934-e774c200-17aa-11eb-848e-673bab4b41ce.jpg)
 
 Now, if we apply PCA on this data, the output would be like the below image (the result of applying the PCA on our dataset at the top, and loading vectors of the PCA algorithm at the bottom):
-![Pic-03](https://user-images.githubusercontent.com/25500417/97180580-7edc1400-17af-11eb-9f4d-c28d5880b7f4.jpg)
-
+<img src="https://user-images.githubusercontent.com/25500417/97180580-7edc1400-17af-11eb-9f4d-c28d5880b7f4.jpg" height="400">
 
 You can find the Python code of this post at [this github address](https://github.com/mrhajbabaei/unsupervised-learning-covid-19).
 
