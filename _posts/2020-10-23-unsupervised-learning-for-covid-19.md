@@ -12,6 +12,7 @@ In this chapter of the book, we can see two methods that are vastly used for Uns
 The idea is to substitute our n observation with dimension p by a lower dimension representation. Provided that we have: <img src="https://user-images.githubusercontent.com/25500417/97175107-3836eb80-17a8-11eb-8285-3a27bc2713d4.png" width="80"> the first principal component would be a normalized linear combination of the features with maximal variance from each other:
 <img src="https://user-images.githubusercontent.com/25500417/97175416-b85d5100-17a8-11eb-80c1-19ea9a698d00.png" width="250">
 Every element (score values) has largest sample variance subject to this constraint:
+
 <img src="https://user-images.githubusercontent.com/25500417/97175677-1f7b0580-17a9-11eb-8ab8-139ac94d3be5.png" width="80">
 
 There is a geometry that says data mostly varied by the first principal component direction. The second principal component has an additional constraint by which <img src="https://user-images.githubusercontent.com/25500417/97175818-53562b00-17a9-11eb-9407-1792a5f4c18d.png" width="20"> should be uncorrelated with <img src="https://user-images.githubusercontent.com/25500417/97176049-a03a0180-17a9-11eb-8536-940e4aadeae8.png" width="20"> (direction of <img src="https://user-images.githubusercontent.com/25500417/97176116-b9db4900-17a9-11eb-9ec2-5d5331178da9.png" width="20"> is orthogonal to the <img src="https://user-images.githubusercontent.com/25500417/97176205-d8d9db00-17a9-11eb-8f03-dcb734cbfd0a.png" width="20">'s direction). I should also mention that <img src="https://user-images.githubusercontent.com/25500417/97176285-f6a74000-17a9-11eb-9330-b41c1ce0bcc3.png" width="20"> vectors also call loading vectors, and <img src="https://user-images.githubusercontent.com/25500417/97176365-15a5d200-17aa-11eb-985b-c659ba380776.png" width="20"> vectors call score vectors.
@@ -37,7 +38,8 @@ The result would be like this:
 ![Pic-02](https://user-images.githubusercontent.com/25500417/97176934-e774c200-17aa-11eb-848e-673bab4b41ce.jpg)
 
 Now, if we apply PCA on this data, the output would be like the below image (the result of applying the PCA on our dataset at the top, and loading vectors of the PCA algorithm at the bottom):
-<img src="https://user-images.githubusercontent.com/25500417/97180580-7edc1400-17af-11eb-9f4d-c28d5880b7f4.jpg" height="400">
+![Pic-03-stretch](https://user-images.githubusercontent.com/25500417/97181718-d7f87780-17b0-11eb-98b2-28363238da7d.jpg)
+
 
 You can find the Python code of this post at [this github address](https://github.com/mrhajbabaei/unsupervised-learning-covid-19).
 
