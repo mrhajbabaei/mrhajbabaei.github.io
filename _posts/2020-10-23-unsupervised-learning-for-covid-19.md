@@ -10,10 +10,10 @@ After reading the Unsupervised Learning chapter in "An Introduction to Statistic
 Unsupervised Learning has been becoming popular among the scientist in various aspects including medical scientist to predict cancer or ads companies to analyze the effect of their work on people.
 In this chapter of the book, we can see two methods that are vastly used for Unsupervised Learning task, PCA and K-Means clustering. PCA mainly use to show data based on its Principal Components. As a case in point, you can show your 2D data just based on your first principal component if your features have a strong relationship; otherwise, you also should use the second component to have a more accurate prediction. In fact, we can have the same number of principal components just equal to the number of features. But, the idea behind PCA is to use lower features (principal components) than the total number of features of data. So, it is necessary to have correlated data to use fewer principal components, unless you cannot have a minimized mean square error.
 The idea is to substitute our n observation with dimension p by a lower dimension representation. Provided that we have X_{1}, X_{2}, ..., X_{p} the first principal component would be a normalized linear combination of the features with maximal variance from each other
-$Z_{1}$ = $\Phi_{11}$$X_{1}$ + $\Phi_{21}$$X_{2}$ + ... + $\Phi_{p1}$$X_{p}$ 
+Z_{1} = \Phi_{11}X_{1} + \Phi_{21}X_{2} + ... + \Phi_{p1}X_{p} 
 that has largest sample variance subject to this constraint
-$\sum_{j=1}^n \Phi_{j1}^2 = 1$
-There is a geometry that says data mostly varied by the first principal component direction. The second principal component has an additional constraint by which $Z_{2}$ should be uncorrelated with $Z_{1}$ (direction of $\Phi_{2}$ is orthogonal to the $\Phi_{1}$'s direction). I should also mention that $\Phi_{n}$ vectors also call loading vectors, and $Z_{n}$ vectors call score vectors.
+\sum_{j=1}^n \Phi_{j1}^2 = 1
+There is a geometry that says data mostly varied by the first principal component direction. The second principal component has an additional constraint by which Z_{2} should be uncorrelated with Z_{1} (direction of \Phi_{2} is orthogonal to the \Phi_{1}'s direction). I should also mention that \Phi_{n} vectors also call loading vectors, and Z_{n} vectors call score vectors.
 
 
 #### Features
